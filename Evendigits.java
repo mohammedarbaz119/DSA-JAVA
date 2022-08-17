@@ -11,6 +11,7 @@ public class Evendigits {
 
     public static void main(String[] args) {
         int c = 0;
+
         int ar[] = { 12, 345, 2, 6, 7896 };
         for (int i = 0; i < ar.length; i++) {
             if (noofdigits(ar[i]) % 2 == 0) {
