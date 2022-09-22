@@ -1,5 +1,3 @@
-import javax.swing.text.html.FormView;
-
 public class productexceptself {
     public static int prodduct(int[] arr, int i) {
         int ele = 1;
