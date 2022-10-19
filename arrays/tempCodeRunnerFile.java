@@ -1,5 +1,6 @@
-for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length; j++) {
-                System.out.println(arr[i][j]);
-            }
-        }
+ // for (int i = 1; i <= arr.length - k; i++) {
+        // int cursu = 0;
+        // // for (int j = i; j < ; j++) {
+
+        // // }
+        // }
