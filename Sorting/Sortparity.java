@@ -10,18 +10,15 @@ public class Sortparity {
     public static void main(String[] args) {
         int arr[] = { 3, 0, 1 };
         int i = 0, j = arr.length - 1;
-        int d = 0;
         while (i <= j) {
-            if (arr[d] % 2 == 0) {
-                swap(arr, i, d);
+            if (arr[i] % 2 == 0) {
+
                 i++;
 
             } else {
-                swap(arr, d, j);
+                swap(arr, i, j);
                 j--;
-                i++;
             }
-            d++;
 
         }
 
