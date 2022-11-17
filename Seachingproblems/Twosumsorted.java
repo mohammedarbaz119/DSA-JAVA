@@ -1,4 +1,4 @@
-package Seachingproblems;
+
 public class Twosumsorted {
     public static int name(int[] arr, int ta, int i) {
         int j = arr.length - 1;

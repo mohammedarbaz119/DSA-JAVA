@@ -7,6 +7,7 @@ public class CountNegatives {
             int l = 0;
             int h = arr[i].length - 1;
             while (l <= h) {
+
                 int mid = l + (h - l) / 2;
                 if (arr[i][mid] < 0) {
                     h = mid - 1;
