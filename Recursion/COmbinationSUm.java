@@ -1,28 +1,32 @@
 import java.util.*;
 
 public class COmbinationSUm {
-    
+    static List<List<Integer>> a = new ArrayList<>();
 
-    static List<List<Integer>> combsm(int arr[],int n,List<List<Integer>> a,int sum,int t,List<Integer> d){
-        if(n==arr.length){
+    static List<List<Integer>> combsm(int arr[], int n, int sum, int t, List<Integer> d) {
+        if (sum == t) {
+            if (!a.contains(d)) {
+                a.add(d);
+            }
             return a;
         }
-        d.add(arr[n]);  
-      sum+=arr[n];
-        if(sum==t){
-            ArrayList<Integer> e = new ArrayList<>(d);
-            a.add(e);
-            d.clear();
-            sum =0;
+        if (sum > t) {
+            return null;
         }
-        return combsm(arr, n+1, a, sum, t, d);
+        for (int i = n; i < arr.length; i++) {
+            List<Integer> New = new ArrayList<>(d);
+            New.add(arr[i]);
+            combsm(arr, n, sum + arr[i], t, New);
+            n++;
+        }
 
-
+        return a;
 
     }
+
     public static void main(String[] args) {
-        int arr[] ={2,2,3,7};
-        System.out.println(combsm(arr, 0, new ArrayList<>(), 0, 7, new ArrayList<>()));
+        int arr[] = { 2, 3, 5 };
+        System.out.println(combsm(arr, 0, 0, 8, new ArrayList<>()));
 
     }
 }
