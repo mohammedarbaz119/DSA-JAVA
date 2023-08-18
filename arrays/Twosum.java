@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Twosum {
     public static void main(String[] args) {
         HashMap<Integer, Integer> v = new HashMap<>();

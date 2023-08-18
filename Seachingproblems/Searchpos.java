@@ -1,4 +1,4 @@
-package Seachingproblems;
+
 
 public class Searchpos {
     public static void main(String[] args) {

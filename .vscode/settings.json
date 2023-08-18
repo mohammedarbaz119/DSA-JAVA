@@ -1,7 +1,9 @@
 {
   "java.project.sourcePaths": [
-    "Recursion",
+    "arrays",
     "Seachingproblems",
-    "arrays"
-  ]
+    "Recursion",
+    "Graphs"
+  ],
+  "FSharp.suggestGitignore": false
 }
